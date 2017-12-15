@@ -1,6 +1,5 @@
 def stock_market(days)
 
-	pos_in_array = 0
 	day_start = 0
 	day_end = days.length - 1
 	largest_difference = 0

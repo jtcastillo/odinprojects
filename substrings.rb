@@ -2,7 +2,6 @@
 
 def substrings(phrase,dictionary)
     phrase = phrase.downcase.gsub(/[[:punct:]]/, '').split(" ")
-    dictionary_word_array = Array.new
     dictionary_hash = Hash.new
 
     #Look at each dictionary word, set its equivalent hash key value to 0. Use an each loop and regex to search through each word in the phrase for a match. If found, increase quantity by one and continue looking until end of phrase. Then go to next word.

@@ -1,13 +1,11 @@
 def stock_market(days)
 
 	day_start = 0
-	day_end = days.length - 1
+	day_end = days.length 
 	largest_difference = 0
 
 	days.each  do|day|
-
 		(day_start..day_end).each do |check_day| 
-			
 			if days[check_day].to_i > day.to_i && (days[check_day].to_i - day.to_i) > largest_difference
 				largest_difference = days[check_day].to_i - day.to_i
 				@buy_and_sell_days = [days.index(day), days.index(days[check_day])]

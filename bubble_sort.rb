@@ -19,7 +19,7 @@ def bubble_sort(number_array, verbose=false)
 			num_a += 1
 			num_b += 1
 		end
-		
+
 		changes = 0
 		num_a = 0
 		num_b = 1
@@ -32,3 +32,5 @@ def bubble_sort(number_array, verbose=false)
 end
 
 bubble_sort([4,2,6,8,4,2,1,9,5], true)
+puts ""
+bubble_sort([5,9,12,1,4,6,3,2,0,2,6,3,1])
